@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-class DB 
+class db
 {
     
     String name;
@@ -16,22 +16,35 @@ class database
         int i, t = 0, r = 0, j, k;
         String u, p, c, y, profile , username , password ;
         Scanner s = new Scanner(System.in);
-        DB e[] = new DB[100];
-        DB temp= new DB();
+        db e[] = new db[100];
+        db temp= new db();
         for (i = 0; i < 100; i++) 
         {
-            e[i] = new DB();
+            e[i] = new db();
         }
-        System.out.println("Signin:");
+        System.out.println("Signup:");
         System.out.println("username:");
         username = s.next();
         System.out.println("password:");
         password = s.next();
         do 
         {
-
+            for (i = 0; i < t; i++) 
+            {
+                for(j=0;j<t-i-1;j++)
+                {
+                    if(e[j].runs < e[j+1].runs)
+                    {
+                        temp = e[j];
+                        e[j] = e[j+1];
+                        e[j+1] = temp;
+                    }
+                }
+                e[i].rank = i+1;
+            }
             System.out.println("Login  Search  Display");
             c = s.next();
+            
 
             if (c.equals("Login")||c.equals("login"))
             {
@@ -61,6 +74,7 @@ class database
                     System.out.println("User not found");
                 }
             }
+            
             else if(c.equals("Search")||c.equals("search")) 
             {
                 profile = s.next();
@@ -84,22 +98,11 @@ class database
             {
                 System.out.println("Invalid input");
             }
+           
             
             System.out.println("Exit or Continue");
             y = s.next();
-            for (i = 0; i < t; i++) 
-            {
-                for(j=0;j<t-i-1;j++)
-                {
-                    if(e[j].runs < e[j+1].runs)
-                    {
-                        temp = e[j];
-                        e[j] = e[j+1];
-                        e[j+1] = temp;
-                    }
-                }
-                e[i].rank = i+1;
-            }
+            
         } while (y.equals("continue")||y.equals("Continue"));
     }
 }
