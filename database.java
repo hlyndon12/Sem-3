@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-class Signup 
+class DB 
 {
     
     String name;
@@ -16,11 +16,11 @@ class database
         int i, t = 0, r = 0, j, k;
         String u, p, c, y, profile , username , password ;
         Scanner s = new Scanner(System.in);
-        Signup e[] = new Signup[100];
-        Signup temp= new Signup();
+        DB e[] = new DB[100];
+        DB temp= new DB();
         for (i = 0; i < 100; i++) 
         {
-            e[i] = new Signup();
+            e[i] = new DB();
         }
         System.out.println("Signin:");
         System.out.println("username:");
