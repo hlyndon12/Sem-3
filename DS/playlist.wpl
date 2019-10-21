@@ -1,0 +1,16 @@
+<?wpl version="1.0"?>
+<smil>
+  <head>
+    <guid>{166ED66C-8330-4A12-8A9D-126F25F0BB16}</guid>
+    <meta name="totalDuration" content="626859" />
+    <meta name="ItemCount" content="2" />
+    <meta name="Generator" content="Entertainment Platform -- 10.19072.1411.0" />
+    <title>playlist</title>
+  </head>
+  <body>
+    <seq>
+      <media src="C:\Users\hlynd\OneDrive\Desktop\DS\bad karma.mp3" albumTitle="Unknown Album" albumArtist="Unknown Artist" trackTitle="bad karma" trackArtist="Unknown Artist" duration="416548" />
+      <media src="C:\Users\hlynd\OneDrive\Desktop\DS\badinga.mp3" albumTitle="Unknown Album" albumArtist="Unknown Artist" trackTitle="badinga" trackArtist="Unknown Artist" duration="210311" />
+    </seq>
+  </body>
+</smil>
